@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.joshua.usinggps.MainActivity">
+
+    <TextView
+        android:text="Latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="23dp"
+        android:id="@+id/tvLatPlaceHolder" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvLatPlaceHolder"
+        android:layout_toRightOf="@+id/tvLatPlaceHolder"
+        android:layout_toEndOf="@+id/tvLatPlaceHolder"
+        android:layout_marginLeft="49dp"
+        android:layout_marginStart="49dp"
+        android:id="@+id/tvLat" />
+
+    <TextView
+        android:text="Logitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLatPlaceHolder"
+        android:layout_alignLeft="@+id/tvLatPlaceHolder"
+        android:layout_alignStart="@+id/tvLatPlaceHolder"
+        android:layout_marginTop="24dp"
+        android:id="@+id/tvLonPlaceHolder" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvLonPlaceHolder"
+        android:layout_alignLeft="@+id/tvLat"
+        android:layout_alignStart="@+id/tvLat"
+        android:id="@+id/tvLon" />
+
+    <TextView
+        android:text="Closest City:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLonPlaceHolder"
+        android:layout_alignLeft="@+id/tvLonPlaceHolder"
+        android:layout_alignStart="@+id/tvLonPlaceHolder"
+        android:layout_marginTop="29dp"
+        android:id="@+id/tvCityPlaceHolder" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvCityPlaceHolder"
+        android:layout_alignLeft="@+id/tvLon"
+        android:layout_alignStart="@+id/tvLon"
+        android:id="@+id/tvClosestCity" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_below="@+id/tvClosestCity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="135dp"
+        android:id="@+id/ivCityImg" />
+</RelativeLayout>

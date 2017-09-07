@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.op_bit.languagepreferenceapp.MainActivity">
+
+    <TextView
+        android:text="Change your language:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:id="@+id/tvTitle"
+        android:textSize="22sp"
+        android:textAllCaps="true"
+        android:layout_below="@+id/tvLanguageChanger"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Language Chosen Yet..."
+        android:textSize="30sp"
+        android:textAllCaps="false"
+        android:textStyle="normal|bold"
+        android:id="@+id/tvLanguageChanger"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="viewStart" />
+
+    <Button
+        android:text="Set Language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSetLanguage"
+        android:textSize="24sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgLanguageChoice"
+        android:layout_below="@+id/tvTitle"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:text="Chinese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbChinese"
+            android:layout_below="@+id/tvTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="69dp" />
+
+        <RadioButton
+            android:text="Maori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbMaori"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="German"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbGerman"
+            android:layout_weight="1" />
+
+    </RadioGroup>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerColor"
+        android:layout_below="@+id/rgLanguageChoice"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="27dp" />
+
+</RelativeLayout>

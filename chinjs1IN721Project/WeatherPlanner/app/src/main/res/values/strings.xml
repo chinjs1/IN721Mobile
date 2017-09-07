@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Outdoor weather planner</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- Entry activity -->
+    <string name="title">Weather Checker App</string>
+    <string name="title_continue">Press to continue...</string>
+
+    <!-- Maps Activity -->
+    <string name="route_instructions">Choose a method of transport and create a route by clicking a start and an end point</string>
+    <string name="save_route">Save Route</string>
+    <string name="clear_route">Clear Route</string>
+    <string name="select_route">--- Please Select A Route ---</string>
+    <string-array name="spinner_travel">
+        <item>Walking Route</item>
+        <item>Bicycling Route</item>
+        <item>Driving Route</item>
+    </string-array>
+
+    <!-- Display Activity -->
+    <string name="spinner_instruction">Shows the weather data for the next 5 days in 3 hour intervals</string>
+    <string name="change_route">Change Route</string>
+    <string name="start_location">Start Location:</string>
+    <string name="end_location">End Location:</string>
+    <string name="temp">Temperature:</string>
+    <string name="humidity">Humidity:</string>
+    <string name="pressure">Pressure:</string>
+    <string name="wind">Wind Speed:</string>
+</resources>
